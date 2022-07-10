@@ -1,0 +1,21 @@
+<aside class="bg-dark border-right p-3" id="sidebar">
+    <main class="d-flex flex-nowrap">
+        <div class="d-flex flex-column p-3 text-white bg-dark">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <span class="fs-4"> <h3 class="text-white">
+                <img src="./../../../assets/logo_white_large.png" width="180px" alt="">
+            </h3>
+          </span>
+          </a>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li *ngFor="let item of historial">
+              <a (click)="buscar(item)" href="#" class="nav-link text-white" aria-current="page">
+                {{item | titlecase}}
+              </a>
+            </li>
+          </ul>
+          <hr>
+        </div>
+    </main>
+</aside>
